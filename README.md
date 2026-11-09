@@ -1,2 +1,1 @@
-# ajou_ai_security
-ajou
+# AI Security
