@@ -1,0 +1,6 @@
+boto3>=1.40        # Guardrails Standard 티어·교차 리전 프로필 파라미터 포함 버전
+pillow>=10         # Demo B 메타데이터 제거 실험
+c2pa-python>=0.6   # Demo B C2PA 매니페스트 상세 확인 (선택)
+bedrock-agentcore>=1.0  # Demo D @requires_access_token 데코레이터
+pyjwt[crypto]>=2.8     # Demo D 토큰 서명 검증 (선택)
+jupyter

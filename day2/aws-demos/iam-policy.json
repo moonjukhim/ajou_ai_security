@@ -1,0 +1,92 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BedrockGuardrailsAndModels",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:CreateGuardrail",
+        "bedrock:CreateGuardrailVersion",
+        "bedrock:GetGuardrail",
+        "bedrock:ListGuardrails",
+        "bedrock:DeleteGuardrail",
+        "bedrock:ApplyGuardrail",
+        "bedrock:InvokeModel",
+        "bedrock:GetModelInvocationLoggingConfiguration"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "VerifiedPermissionsDemoC",
+      "Effect": "Allow",
+      "Action": [
+        "verifiedpermissions:CreatePolicyStore",
+        "verifiedpermissions:GetPolicyStore",
+        "verifiedpermissions:ListPolicyStores",
+        "verifiedpermissions:DeletePolicyStore",
+        "verifiedpermissions:CreatePolicy",
+        "verifiedpermissions:ListPolicies",
+        "verifiedpermissions:IsAuthorized"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DnsFirewallDemoB",
+      "Effect": "Allow",
+      "Action": [
+        "route53resolver:CreateFirewallDomainList",
+        "route53resolver:UpdateFirewallDomains",
+        "route53resolver:CreateFirewallRuleGroup",
+        "route53resolver:CreateFirewallRule",
+        "route53resolver:AssociateFirewallRuleGroup",
+        "route53resolver:DisassociateFirewallRuleGroup",
+        "route53resolver:ListFirewallRuleGroupAssociations",
+        "route53resolver:DeleteFirewallRule",
+        "route53resolver:DeleteFirewallRuleGroup",
+        "route53resolver:DeleteFirewallDomainList"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AgentCoreIdentityDemoD",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:CreateWorkloadIdentity",
+        "bedrock-agentcore:DeleteWorkloadIdentity",
+        "bedrock-agentcore:GetWorkloadIdentity",
+        "bedrock-agentcore:CreateOauth2CredentialProvider",
+        "bedrock-agentcore:DeleteOauth2CredentialProvider",
+        "bedrock-agentcore:GetOauth2CredentialProvider",
+        "bedrock-agentcore:CreateTokenVault",
+        "bedrock-agentcore:GetTokenVault",
+        "bedrock-agentcore:GetWorkloadAccessToken",
+        "bedrock-agentcore:GetWorkloadAccessTokenForUserId",
+        "bedrock-agentcore:GetResourceOauth2Token",
+        "bedrock-agentcore:CompleteResourceTokenAuth",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:PutSecretValue",
+        "secretsmanager:DeleteSecret",
+        "cognito-idp:CreateUserPool",
+        "cognito-idp:DeleteUserPool",
+        "cognito-idp:ListUserPools",
+        "cognito-idp:DescribeUserPool",
+        "cognito-idp:CreateUserPoolDomain",
+        "cognito-idp:DeleteUserPoolDomain",
+        "cognito-idp:DescribeUserPoolDomain",
+        "cognito-idp:CreateResourceServer",
+        "cognito-idp:CreateUserPoolClient",
+        "cognito-idp:UpdateUserPoolClient",
+        "cognito-idp:AdminCreateUser",
+        "cognito-idp:AdminSetUserPassword"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Identity",
+      "Effect": "Allow",
+      "Action": "sts:GetCallerIdentity",
+      "Resource": "*"
+    }
+  ]
+}
