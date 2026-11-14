@@ -1,0 +1,9 @@
+# 노트북 쪽 (에이전트 자체는 agent_runtime/requirements.txt로 AgentCore Runtime에 배포됨)
+boto3>=1.43                 # AgentCore Runtime·Evaluations, S3 Vectors, Guardrails crossRegionConfig
+strands-agents>=1.39        # Demo 2·3에서 배포된 훅 코드를 보여 줄 때 import
+bedrock-agentcore>=1.0
+opentelemetry-sdk>=1.30
+pandas>=2.0
+ipython
+ipywidgets>=8               # Demo 2 사람 승인 버튼
+uv                          # 00_setup: 에이전트 의존성을 Linux arm64용으로 패키징
