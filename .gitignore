@@ -2,4 +2,4 @@ tmp
 _tmp
 .env
 __pycache__
-day3/build/runtime_pkg
+*runtime_pkg
