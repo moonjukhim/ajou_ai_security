@@ -2,4 +2,4 @@ tmp
 _tmp
 .env
 __pycache__
-*runtime_pkg
+runtime_pkg/
